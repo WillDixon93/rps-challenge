@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require_relative './lib/game'
+require_relative './lib/rpsgame'
 
 class RPS < Sinatra::Base
 
@@ -16,7 +16,7 @@ class RPS < Sinatra::Base
     erb :play
   end
 
-  post '/outcome' do
-    "Hello World"
+  post '/winning_outcome' do
+    erb :winning_outcome
   end
 end

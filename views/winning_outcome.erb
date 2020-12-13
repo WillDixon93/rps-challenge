@@ -1,0 +1,14 @@
+<%= $game.results %>
+
+<h1> You chose: <%= $game.player_weapon %>
+
+I seleced: <%= $game.pc_weapon %></h2><br>
+
+<h3>
+<% if $game.player_wins == true %>
+Well done, you win!
+
+<% else %>
+Unlucky <%= $name %> - you lost
+<% end %>
+</h3>
